@@ -1,0 +1,11 @@
+import mysql.connector
+
+mydb = connect(host="localhost",user="chinnu",passwd="chinnu@123",database="chinnu")
+
+mycursor = mydb.cursor()
+
+mycursor.execute("select * from movie")
+
+for i in mycursor:
+      print(i)
+
